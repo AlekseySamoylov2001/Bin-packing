@@ -17,7 +17,8 @@ namespace Kurs
 
             try
             {
-                StreamReader sr = new StreamReader("test.txt");
+                //StreamReader sr = new StreamReader("test.txt");
+                StreamReader sr = new StreamReader("N4C1W4_Q.bpp");
 
                 string line = sr.ReadLine();
 
