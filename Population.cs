@@ -35,7 +35,7 @@ namespace Kurs
 
                     for (int j = 0; j < Math.Min(individs[index].Bins.Count, individs[i].Bins.Count); j++)
                         for (int k = 0; k < individs[index].Bins[j].Things.Count; k++)
-                            similar[i] += individs[i].Bins[j].Things.IndexOf(individs[index].Bins[j].Things[k]) >= 0 ? 1 : 0;
+                            similar[similar.Count - 1] += individs[i].Bins[j].Things.IndexOf(individs[index].Bins[j].Things[k]) >= 0 ? 1 : 0;
 
                     sum += similar[similar.Count - 1] + 1;
 
@@ -69,7 +69,7 @@ namespace Kurs
 
                     for (int j = 0; j < Math.Min(individs[index].Bins.Count, individs[i].Bins.Count); j++)
                         for (int k = 0; k < individs[index].Bins[j].Things.Count; k++)
-                            similar[i] += individs[i].Bins[j].Things.IndexOf(individs[index].Bins[j].Things[k]) >= 0 ? 1 : 0;
+                            similar[similar.Count - 1] += individs[i].Bins[j].Things.IndexOf(individs[index].Bins[j].Things[k]) >= 0 ? 1 : 0;
 
                     sum += similar[similar.Count - 1];
                 }
